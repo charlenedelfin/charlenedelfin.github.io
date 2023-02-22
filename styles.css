@@ -1,0 +1,8 @@
+body {
+  margin: 20px;
+}
+
+nav > ul > li {
+  display: block;
+}
+  
