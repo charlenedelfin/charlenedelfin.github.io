@@ -13,6 +13,10 @@ nav > ul > li {
 }
 
 li > a {
+  color: inherit;
   text-decoration: none;
 }
-  
+
+h1 {
+  text-align: center;
+}
