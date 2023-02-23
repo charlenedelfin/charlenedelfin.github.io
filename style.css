@@ -1,6 +1,41 @@
-body {
+/* Header style */
+
+#website {
   margin: 20px;
 }
+
+#frame {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-1 {
+  margin: 20px;
+}
+
+#content-2 {
+  margin: 20px;
+}
+
+#content-3 {
+  margin: 20px;
+}
+
+#content-4 {
+  margin: 20px;
+}
+
+#content-5 {
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Navbar style */
 
 nav > ul {
   display: flex;
@@ -15,8 +50,4 @@ nav > ul > li {
 li > a {
   color: inherit;
   text-decoration: none;
-}
-
-h1 {
-  text-align: center;
 }
