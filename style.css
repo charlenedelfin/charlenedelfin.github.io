@@ -1,29 +1,115 @@
-a {
-  color: black;
-  text-decoration: none;
-}
+/* Customizes all website content */
 
-#website {
+body {
   width: 80%;
   margin: auto;
   text-align: center;
   font-size: 19px;
 }
 
-#separator {
-  height: 40px;
+/* Custimizes website title and navbar */
+
+header {
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
 }
 
-button {
+nav {
+  width: 50%;
+  max-width: 400px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li > a {
+  color: #880808;
+}
+
+nav > ul > li > a:hover {
+  color: black;
+}
+
+/*Navbar problem */
+
+/* Gives sections extra spaces above and below */
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Helps images shrink to mobile view */
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Customizes paragraphs */
+
+p {
+  margin: auto auto 30px;
+  width: 80%;
+}
+
+/* Customizes buttons */
+
+section > button {
   height: 60px;
   width: 220px;
   font-size: 1.30em;
   font-weight: 800;
+  border: 0;
   border-radius: 20px;
-  background: black;
+  background: #880808;
   cursor: pointer;
 }
 
-button > a {
-  color: white;
+section > button:hover {
+  background-color: black;
+}
+
+/* Adds extra space below Contact section header */
+
+#contact > h3:first:child {
+  margin-bottom: 25px;
+}
+
+/* Customizes paragraphs in Contact section */
+
+#contact > p {
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+/* Customizes Contact section and footer links */
+
+h3 > a, footer > a {
+  color: #880808;
+}
+
+h3 > a:hover, footer > a:hover {
+  color: black;
 }
