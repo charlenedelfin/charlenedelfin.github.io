@@ -7,7 +7,13 @@ body {
   font-size: 19px;
 }
 
-/* Custimizes website title and navbar */
+/* Customizes all links */
+
+a {
+  text-decoration: none;
+}
+
+/* Customizes website title and navbar */
 
 header {
   width: 80%;
@@ -50,8 +56,6 @@ nav > ul > li > a:hover {
   color: black;
 }
 
-/*Navbar problem */
-
 /* Gives sections extra spaces above and below */
 
 section {
@@ -89,6 +93,11 @@ section > button {
 
 section > button:hover {
   background-color: black;
+}
+
+section > button > a {
+  color: white;
+  text-decoration: none;
 }
 
 /* Adds extra space below Contact section header */
