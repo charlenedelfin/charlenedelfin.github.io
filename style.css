@@ -1,8 +1,9 @@
-/* Customizes all website content */
 
-body {
-  width: 80%;
-  margin: auto;
+
+/* Removes unnecessary spaces, computes font size, and sets scroll behavior */
+
+html {
+  box-sizing: border-box;
   text-align: center;
   font-size: 19px;
 }
@@ -21,65 +22,43 @@ a:hover {
 /* Customizes website title and navbar */
 
 header {
-  width: 80%; /* TODO */
-  height: 50px; /* TODO */
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  background: white;
   position: fixed;
   top: 0;
-}
-
-nav {
-  width: 50%; /* TODO */
-  max-width: 400px; /* TODO */
-  height: 50px; /* TODO */
-}
-
-nav > ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  padding-inline-start: 0; /* TODO */
-  margin-block: 0; /* TODO */
-  height: 100%; /* TODO */
 }
 
-nav > ul > li {
-  margin: 0 0.2rem; /* TODO */
-  padding: 0.2rem; /* TODO */
-  display: block; /* TODO */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
-nav > ul > li > a {
-  color: #880808;
-}
-
-nav > ul > li > a:hover {
-  color: black;
-}
-
-/* Gives sections extra spaces above and below */
+/* Gives sections extra space above and below */
 
 section {
-  margin-top: 50px; /* TODO */
-  margin-bottom: 50px; /* TODO */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-/* Helps images shrink to mobile view */
+/* Shrinks images */
 
 img {
-  width: 75%; /* TODO */
-  height: 70%; /* TODO */
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
 }
 
-/* Customizes paragraphs */
+/* Customizes paragraphs that are not in Contact section*/
 
-p {
-  margin: auto auto 30px; /* TODO */
-  width: 80%; /* TODO */
+ :not(#items) > p {
+  margin: auto;
+  margin-bottom: 30px;
+  width: 900px;
   text-align: justify;
 }
 
@@ -97,7 +76,7 @@ section > button {
 }
 
 section > button:hover {
-  background-color: black;
+  background: black;
 }
 
 section > button > a {
@@ -110,23 +89,27 @@ section > button > a:hover {
 
 /* Adds extra space below Contact section header */
 
-#contact > h3:first:child {
-  margin-bottom: 25px; /* TODO */
+#contact > h3:first-child {
+  margin-bottom: 25px;
 }
 
 /* Customizes paragraphs in Contact section */
 
 #container {
+  width: 900px;
+  margin: auto;
   display: flex;
   gap: 15px;
 }
 
 #items {
-  width: 100%; /* TODO */
-  border: 1px solid #880808;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid pink;
   border-radius: 20px;
 }
 
 #contact > p {
+  margin-top: 10px;
   text-align: center;
 }
