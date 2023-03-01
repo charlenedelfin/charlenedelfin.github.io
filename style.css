@@ -11,13 +11,18 @@ body {
 
 a {
   text-decoration: none;
+  color: #880808;
+}
+
+a:hover {
+  color: black;
 }
 
 /* Customizes website title and navbar */
 
 header {
-  width: 80%;
-  height: 50px;
+  width: 80%; /* TODO */
+  height: 50px; /* TODO */
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -28,24 +33,24 @@ header {
 }
 
 nav {
-  width: 50%;
-  max-width: 400px;
-  height: 50px;
+  width: 50%; /* TODO */
+  max-width: 400px; /* TODO */
+  height: 50px; /* TODO */
 }
 
 nav > ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-inline-start: 0;
-  margin-block: 0;
-  height: 100%;
+  padding-inline-start: 0; /* TODO */
+  margin-block: 0; /* TODO */
+  height: 100%; /* TODO */
 }
 
 nav > ul > li {
-  margin: 0 0.2rem;
-  padding: 0.2rem;
-  display: block;
+  margin: 0 0.2rem; /* TODO */
+  padding: 0.2rem; /* TODO */
+  display: block; /* TODO */
 }
 
 nav > ul > li > a {
@@ -59,23 +64,23 @@ nav > ul > li > a:hover {
 /* Gives sections extra spaces above and below */
 
 section {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 50px; /* TODO */
+  margin-bottom: 50px; /* TODO */
 }
 
 /* Helps images shrink to mobile view */
 
 img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
+  width: 75%; /* TODO */
+  height: 70%; /* TODO */
 }
 
 /* Customizes paragraphs */
 
 p {
-  margin: auto auto 30px;
-  width: 80%;
+  margin: auto auto 30px; /* TODO */
+  width: 80%; /* TODO */
+  text-align: justify;
 }
 
 /* Customizes buttons */
@@ -97,28 +102,31 @@ section > button:hover {
 
 section > button > a {
   color: white;
-  text-decoration: none;
+}
+
+section > button > a:hover {
+  color: white;
 }
 
 /* Adds extra space below Contact section header */
 
 #contact > h3:first:child {
-  margin-bottom: 25px;
+  margin-bottom: 25px; /* TODO */
 }
 
 /* Customizes paragraphs in Contact section */
 
+#container {
+  display: flex;
+  gap: 15px;
+}
+
+#items {
+  width: 100%; /* TODO */
+  border: 1px solid #880808;
+  border-radius: 20px;
+}
+
 #contact > p {
-  margin-bottom: 50px;
-  width: 50%;
-}
-
-/* Customizes Contact section and footer links */
-
-h3 > a, footer > a {
-  color: #880808;
-}
-
-h3 > a:hover, footer > a:hover {
-  color: black;
+  text-align: center;
 }
