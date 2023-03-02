@@ -1,4 +1,4 @@
-/* Removes unnecessary spaces, computes font size, and sets scroll behavior */
+/* Removes excess spaces, centers elements, and sets font size */
 
 html {
   box-sizing: border-box;
@@ -6,76 +6,85 @@ html {
   font-size: 19px;
 }
 
-/* Customizes all links */
+/* Makes all links blood red and removes their underlines */
 
 a {
   text-decoration: none;
   color: #880808;
 }
 
+/* Makes all linkes black upon hover */
+
 a:hover {
   color: black;
 }
 
-/* Customizes website title and navbar */
+/* Adds extra space at the top of website title */
 
-header {
-  width: 100%;
-  background: white;
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+h1 {
+  margin-top: 50px;
 }
+
+/* Removes bullets of navbar, makes navbar white, stretches navbar across top of viewport, adds extra space below navbar, moves links to left, separates links from each other */
 
 ul {
   list-style: none;
+  background: white;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 2px;
   display: flex;
-  justify-content: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 4px;
+  position: fixed;
+  top: 0;
 }
 
 /* Gives sections extra space above and below */
 
 section {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* Shrinks images */
 
 img {
-  width: 40%;
-  height: 40%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
 }
 
-/* Customizes paragraphs that are not in Contact section*/
+/* For paragraphs not in Contact section, centers them, keeps them off screen edge, gives them extra space below */
 
- :not(#items) > p {
+:not(#items) > p {
   margin: auto;
-  margin-bottom: 30px;
-  width: 900px;
+  width: 99%;
+  margin-bottom: 15px;
   text-align: justify;
 }
 
-/* Customizes buttons */
+/* Makes buttons bigger, removes their borders, makes them a bit rounded, makes them blood red, turns cursor into pointer when on a button */
 
 section > button {
-  height: 60px;
-  width: 220px;
-  font-size: 1.30em;
-  font-weight: 800;
+  height: 40px;
+  width: 140px;
+  font-size: 1em;
+  font-weight: 400;
   border: 0;
   border-radius: 20px;
   background: #880808;
   cursor: pointer;
 }
 
+/* Makes buttons turn black upon hover */
+
 section > button:hover {
   background: black;
 }
+
+/* Keeps button links white */
 
 section > button > a {
   color: white;
@@ -85,29 +94,112 @@ section > button > a:hover {
   color: white;
 }
 
-/* Adds extra space below Contact section header */
+/* Rearranges text in paragraphs of Contact section */
 
-#contact > h3:first-child {
-  margin-bottom: 25px;
+#items > p {
+  text-align: justify;
 }
 
-/* Customizes paragraphs in Contact section */
-
-#container {
-  width: 900px;
-  margin: auto;
-  display: flex;
-  gap: 15px;
-}
-
-#items {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid pink;
-  border-radius: 20px;
-}
+/* Rearranges last paragraph and gives it a blood red line on top */
 
 #contact > p {
-  margin-top: 10px;
-  text-align: center;
+ border-top: 1px solid #880808;
+ text-align: justify;
+}
+
+/* For really big screens */
+
+@media only screen and (min-width: 1200px)
+{
+  /* Resets website title top margin */
+  
+  h1 {
+    margin-top: initial;
+  }
+  
+  /* Turns whole header into navbar */
+  
+  header {
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    
+    /* Distributes header components evenly */
+    
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Resets navbar for more space */
+  
+  ul {
+    margin: initial;
+    width: initial;
+    padding-bottom: initial;
+    display: flex;
+    flex-wrap: initial;
+    justify-content: center;
+    gap: 16px;
+    position: initial;
+    top: initial;
+  }
+  
+  /* Increases section separation */
+  
+  section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  /* Keeps images from getting too big */
+  
+  img {
+    width: 40%;
+    height: 40%;
+  }
+  
+  /* Keeps paragraphs from crowding screen */
+  
+  :not(#items) > p {
+    margin-bottom: 30px;
+    width: 900px;
+  }
+  
+  /* Increases button size */
+  
+  section > button {
+    height: 60px;
+    width: 220px;
+    font-size: 1.30em;
+    font-weight: 800;
+  }
+  
+  /* Adds extra space below Contact section title */
+  
+  #contact > h3:first-child {
+    margin-bottom: 25px;
+  }
+  
+  /* Organizes paragraphs in Contact section */
+  
+  #container {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+  }
+
+  #items {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid pink;
+    border-radius: 20px;
+  }
+  
+  #contact > p {
+    border-top: initial;
+    text-align: center;
+  }
 }
