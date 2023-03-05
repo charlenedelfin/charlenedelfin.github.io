@@ -1,7 +1,5 @@
 /* Removes excess spaces, centers elements, and sets font size */
 
-/*test*/
-
 html {
   box-sizing: border-box;
   text-align: center;
@@ -15,9 +13,9 @@ a {
   color: #880808;
 }
 
-/* Makes all linkes black upon hover */
+/* Makes all links black upon click */
 
-a:hover {
+a:focus {
   color: black;
 }
 
@@ -80,9 +78,9 @@ section > button {
   cursor: pointer;
 }
 
-/* Makes buttons turn black upon hover */
+/* Makes buttons turn black upon click */
 
-section > button:hover {
+section > button:focus {
   background: black;
 }
 
@@ -92,7 +90,7 @@ section > button > a {
   color: white;
 }
 
-section > button > a:hover {
+section > button > a:focus {
   color: white;
 }
 
@@ -107,6 +105,54 @@ section > button > a:hover {
 #contact > p {
  border-top: 1px solid #880808;
  text-align: justify;
+}
+
+/* For devices that use a cursor */
+
+@media (hover: hover) {
+  
+  /* Makes all links black upon hover */
+  
+  a:hover {
+    color: black;
+  }
+  
+  /* Makes buttons black and bigger upon hover */
+  
+  section > button:hover {
+    background-color: black;
+    animation: grow 10s step-start infinite;
+  }
+  
+  /* Keeps links in buttons white */
+  
+  section > button > a:hover {
+    color: white;
+  }
+  
+  /* Makes Facebook icon spin upon hover */
+  
+  .fa-facebook:hover {
+    animation: wheel 0.1s linear infinite;
+  }
+  
+  @keyframes grow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 /* For really big screens */
