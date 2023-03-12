@@ -130,9 +130,9 @@ section > button > a:focus {
     color: white;
   }
   
-  /* Makes Facebook icon spin upon hover */
+  /* Makes social icons spin upon hover */
   
-  .fa-facebook:hover {
+  .fa-facebook:hover, .fa-blogger:hover, .fa-square-instagram:hover, .fa-square-youtube:hover, .fa-spotify:hover, .fa-square-twitter:hover, .fa-goodreads:hover, .fa-pinterest:hover, .fa-linkedin:hover {
     animation: wheel 0.1s linear infinite;
   }
   
