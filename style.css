@@ -113,7 +113,7 @@ section > button > a:focus {
   
   /* Makes all links black upon hover */
   
-  a:hover {
+  :not(footer) > a:hover {
     color: black;
   }
   
