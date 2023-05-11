@@ -1,16 +1,63 @@
-/* Removes excess spaces, centers elements, and sets font size */
+/* Sets variable for neon blue */
+
+:root {
+  --main-blue: #0096ff;
+}
+
+/* Removes default margins and padding */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sets sizes of elements, font style, and scroll behavior */
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 html {
   box-sizing: border-box;
-  text-align: center;
-  font-size: 19px;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-/* Makes all links blood red and removes their underlines */
+h2, p {
+  font-family: Arial;
+}
+
+/* Removes scrollbar, centers text, and sets background image */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  scrollbar-width: none;
+  text-align: center;
+}
+
+/* Sets the size of logo */
+
+#logo {
+  width: max(60px, 5vh);
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/* Makes all links except ones in buttons neon blue */
 
 a {
   text-decoration: none;
-  color: #880808;
+  color: var(--main-blue);
+}
+
+/* Makes links in button white */
+
+#display-case > button > a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Makes all links black upon click */
@@ -19,130 +66,263 @@ a:focus {
   color: black;
 }
 
-/* Adds extra space at the top of website title */
+/* Sets size of navbar, removes bullet points, spreads navbar across top of screen */
 
-h1 {
-  margin-top: 50px;
+header {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Removes bullets of navbar, makes navbar white, stretches navbar across top of viewport, adds extra space below navbar, moves links to left, separates links from each other */
-
 ul {
+  font-size: 1.5rem;
   list-style: none;
-  background: white;
   margin: auto;
   width: 100%;
   padding-bottom: 2px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 4px;
+  gap: 5px;
   position: fixed;
   top: 0;
 }
 
-/* Gives sections extra space above and below */
+/* Centers description and sets its sets its size */
 
-section {
-  margin-top: 25px;
-  margin-bottom: 25px;
+#container > section {
+  padding: 2rem;
 }
 
-/* Shrinks images */
+#container > section > p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Reorders contents of display case */
+
+#display-case {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+#title-1 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+desc-1 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#btn-1 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#image-2 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+#title-2 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+#desc-2 {
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+#btn-2 {
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+#image-3 {
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+#title-3 {
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+#desc-3 {
+  grid-row-start: 11;
+  grid-row-end: 12;
+}
+
+#btn-3 {
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+#image-4 {
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+
+#title-4 {
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+#desc-4 {
+  grid-row-start: 15;
+  grid-row-end: 16;
+}
+
+#btn-4 {
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+#image-5 {
+  grid-row-start: 17;
+  grid-row-end: 18;
+}
+
+#title-5 {
+  grid-row-start: 18;
+  grid-row-end: 19;
+}
+
+desc-5 {
+  grid-row-start: 19;
+  grid-row-end: 20;
+}
+
+#btn-5 {
+  grid-row-start: 20;
+  grid-row-end: 21;
+}
+
+#image-6 {
+  grid-row-start: 21;
+  grid-row-end: 22;
+}
+
+#title-6 {
+  grid-row-start: 22;
+  grid-row-end: 23;
+}
+
+#desc-6 {
+  grid-row-start: 23;
+  grid-row-end: 24;
+}
+
+#btn-6 {
+  grid-row-start: 24;
+  grid-row-end: 25;
+}
+
+/* Adds space between page intro and first image */
+
+#page > p {
+  margin-bottom: 50px;
+}
+
+/* Sets sizes of images, product titles, and product descriptions */
 
 img {
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
 }
 
-/* For paragraphs not in Contact section, centers them, keeps them off screen edge, gives them extra space below */
-
-:not(#items) > p {
-  margin: auto;
-  width: 99%;
+#display-case > h2 {
+  margin-top: 15px;
   margin-bottom: 15px;
-  text-align: justify;
 }
 
-/* Makes buttons bigger, removes their borders, makes them a bit rounded, makes them blood red, turns cursor into pointer when on a button */
-
-section > button {
-  height: 40px;
-  width: 140px;
-  font-size: 1em;
-  font-weight: 400;
-  border: 0;
-  border-radius: 20px;
-  background: #880808;
-  cursor: pointer;
+#display-case > p {
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
-/* Makes buttons turn black upon click */
+/* Designs buttons */
 
-section > button:focus {
-  background: black;
+button {
+  margin-top: 6px;
+  margin-bottom: 30px;
+  width: 50%;
+  background-color: var(--main-blue);
+  font-size: 16px;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
 }
 
-/* Keeps button links white */
+/* Homepage only */
+/* Sets background image for homepage */
 
-section > button > a {
+#home-body {
+  -ms-overflow-style: none;
+  background-image: url('https://cdn.pixabay.com/photo/2017/05/13/07/16/tree-2308847__340.jpg');
+  background-repeat: no-repeat;
+  backgkround-attachment: fixed;
+  background-size: cover;
+}
+
+/* Makes homepage fill viewport */
+
+#home-body > main > #container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Puts welcome message in a transparent box */
+
+#container > #home {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Makes welcome message white */
+
+#container > #home > p {
   color: white;
-}
-
-section > button > a:focus {
-  color: white;
-}
-
-/* Rearranges text in paragraphs of Contact section */
-
-#items > p {
-  text-align: justify;
-}
-
-/* Rearranges last paragraph and gives it a blood red line on top */
-
-#contact > p {
- border-top: 1px solid #880808;
- text-align: justify;
 }
 
 /* For devices that use a cursor */
 
 @media (hover: hover) {
   
-  /* Makes all links black upon hover */
+  /* Makes all links except the ones in     footer black upon hover*/
   
-  :not(footer) > a:hover {
+  :not(footer) > a:hover, #display-case > button > a:hover {
     color: black;
   }
   
-  /* Makes buttons black and bigger upon hover */
+  /* Zooms images upon hover */
   
-  section > button:hover {
-    background-color: black;
-    animation: grow 10s step-start infinite;
+  #zoomer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
   
-  /* Keeps links in buttons white */
+  img {
+    transition: transform .25s;
+  }
   
-  section > button > a:hover {
-    color: white;
+  #zoomer:hover img {
+    transform: scale(1.5);
   }
   
   /* Makes social icons spin upon hover */
   
-  .fa-facebook:hover, .fa-blogger:hover, .fa-square-instagram:hover, .fa-square-youtube:hover, .fa-spotify:hover, .fa-square-twitter:hover, .fa-goodreads:hover, .fa-pinterest:hover, .fa-linkedin:hover {
+  .fa-facebook:hover, .fa-blogger:hover,     .fa-square-instagram:hover, .fa-square-youtube:hover, .fa-spotify:hover, .fa-square-twitter:hover, .fa-goodreads:hover, .fa-pinterest:hover,     .fa-linkedin:hover, .fa-tiktok:hover,     .fa-reddit:hover {
     animation: wheel 0.1s linear infinite;
-  }
-  
-  @keyframes grow {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.1);
-    }
   }
   
   @keyframes wheel {
@@ -150,7 +330,7 @@ section > button > a:focus {
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+      transform: rotate(100deg);
     }
   }
 }
@@ -159,24 +339,21 @@ section > button > a:focus {
 
 @media only screen and (min-width: 1200px)
 {
-  /* Resets website title top margin */
   
-  h1 {
-    margin-top: initial;
-  }
-  
-  /* Turns whole header into navbar */
+  /* Turns whole header into navbar and     makes it transparent*/
   
   header {
+    right: 15px;
     width: 100%;
-    background: white;
     position: fixed;
     top: 0;
+    left: 0;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
     
-    /* Distributes header components evenly */
+    /* Distributes header components           evenly */
     
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
   
@@ -194,60 +371,68 @@ section > button > a:focus {
     top: initial;
   }
   
-  /* Increases section separation */
+  /* Organizes whole page */
   
-  section {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  
-  /* Keeps images from getting too big */
-  
-  img {
-    width: 40%;
-    height: 40%;
-  }
-  
-  /* Keeps paragraphs from crowding screen */
-  
-  :not(#items) > p {
-    margin-bottom: 30px;
-    width: 900px;
-  }
-  
-  /* Increases button size */
-  
-  section > button {
-    height: 60px;
-    width: 220px;
-    font-size: 1.30em;
-    font-weight: 800;
-  }
-  
-  /* Adds extra space below Contact section title */
-  
-  #contact > h3:first-child {
-    margin-bottom: 25px;
-  }
-  
-  /* Organizes paragraphs in Contact section */
-  
-  #container {
-    width: 900px;
-    margin: auto;
+  :not(#home-body > main) #container {
     display: flex;
-    gap: 15px;
-  }
-
-  #items {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding: 8px;
-    border: 1px solid pink;
-    border-radius: 20px;
+    gap: 30px;
   }
   
-  #contact > p {
-    border-top: initial;
-    text-align: center;
+  /* Moves page intro from behind navbar */
+  
+  #page > p {
+    margin: 5% 5%;
+  }
+  
+  /* Aligns everything in display case */
+  
+  #display-case {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 16px;
+  }
+  
+  /* Centers alignment of product titles */
+  
+  #display-case > h2 {
+    align-self: center;
+  }
+  
+  /* Separates product descriptions from buttons */
+  
+  #display-case > p {
+    margin-bottom: 10px;
+  }
+  
+  /* Centers buttons in their containers */
+  
+  #display-case > button {
+    justify-self: center;
+  }
+  
+  /* Resets contents of display case */
+  
+  #image-2, #image-3, #image-4, #image-5, #-image6 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  #title-1, #title-2, #title-3, #title-4, #title-5, #title-6 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  #desc-1, #desc-2, #desc-3, #desc-4, #desc-5, #desc-6 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  #btn-1, #btn-2, #btn-3, #btn-4, #btn-5, #btn-6 {
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
 }
