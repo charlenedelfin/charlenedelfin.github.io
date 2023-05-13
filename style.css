@@ -111,7 +111,7 @@ ul {
   grid-row-end: 3;
 }
 
-desc-1 {
+#desc-1 {
   grid-row-start: 3;
   grid-row-end: 4;
 }
