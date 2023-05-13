@@ -303,6 +303,11 @@ button {
     color: black;
   }
   
+  /* Keeps header on top layer */
+  header {
+    z-index: 1;
+  }
+  
   /* Zooms images upon hover */
   
   #zoomer {
