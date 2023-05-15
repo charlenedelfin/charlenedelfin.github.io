@@ -308,13 +308,15 @@ button {
 
 @media (hover: hover) {
   
-  /* Makes all links except the ones in     footer black upon hover*/
+  /* Makes all links except the ones in footer black upon hover*/
   
   :not(footer) > a:hover, #display-case > button > a:hover, #privacy > a {
     color: black;
   }
   
   /* Keeps header on top layer */
+  /* This is taken from this tweet on May 13, 2023: https://twitter.com/wydman_dev/status/1657091723820949524 */
+  
   header {
     z-index: 1;
   }
