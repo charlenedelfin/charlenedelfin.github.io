@@ -73,7 +73,7 @@ header {
   flex-wrap: wrap;
 }
 
-/* This and all other flexboxes in this file are adapted from this article: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties */
+/* This and all other flexboxes in this file are adapted from this article on May 7, 2023: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties */
 
 ul {
   font-size: 1.5rem;
@@ -101,7 +101,7 @@ ul {
 }
 
 /* Reorders contents of display case */
-/* This and all other grids in this file are adapted from this article: https://css-tricks.com/snippets/css/complete-guide-grid/ */
+/* This and all other grids in this file are adapted from this article on May 7, 2023: https://css-tricks.com/snippets/css/complete-guide-grid/ */
 
 #display-case {
   display: grid;
@@ -231,7 +231,7 @@ ul {
 }
 
 /* Sets sizes of images, product titles, and product descriptions */
-/* This is adapted from this thread: https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css */
+/* This is adapted from this thread on May 6, 2023: https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css */
 
 img {
   width: 100%;
@@ -251,7 +251,7 @@ img {
 }
 
 /* Designs buttons */
-/* This is adapted from this article: https://www.javatpoint.com/how-to-center-a-button-in-css#:~:text=We%20can%20align%20the%20buttons,of%20margin%20property%20to%20auto. */
+/* This is adapted from this article on May 4, 2023: https://www.javatpoint.com/how-to-center-a-button-in-css#:~:text=We%20can%20align%20the%20buttons,of%20margin%20property%20to%20auto. */
 
 button {
   margin-top: 6px;
@@ -320,7 +320,7 @@ button {
   }
   
   /* Zooms images upon hover */
-  /* This is adapted from these two articles: (a)https://w3bits.com/css-image-hover-zoom/ and (b)https://webgolovolomki.com/en/how-to-make-a-smooth-zoom-of-the-image-on-hover-effect-on-pure-css/ */
+  /* This is adapted from these two articles on May 6, 2023: (a)https://w3bits.com/css-image-hover-zoom/ and (b)https://webgolovolomki.com/en/how-to-make-a-smooth-zoom-of-the-image-on-hover-effect-on-pure-css/ */
   
   #zoomer {
     width: 100%;
@@ -358,7 +358,7 @@ button {
 {
   
   /* Turns whole header into navbar and makes it transparent*/
-  /* This is adapted from these two threads: (a)https://stackoverflow.com/questions/46900540/nav-bar-doesnt-go-across-whole-page and (b)https://stackoverflow.com/questions/63253634/why-does-my-navbar-stay-on-the-left-side-of-the-page-when-i-turn-it-to-fixed */
+  /* This is adapted from these two threads on May 9, 2023: (a)https://stackoverflow.com/questions/46900540/nav-bar-doesnt-go-across-whole-page and (b)https://stackoverflow.com/questions/63253634/why-does-my-navbar-stay-on-the-left-side-of-the-page-when-i-turn-it-to-fixed */
   
   header {
     right: 15px;
