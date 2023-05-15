@@ -310,7 +310,7 @@ button {
   
   /* Makes all links except the ones in footer black upon hover*/
   
-  :not(footer) > a:hover, #display-case > button > a:hover, #privacy > a {
+  :not(footer) > a:hover, #display-case > button > a:hover, #privacy > a:hover {
     color: black;
   }
   
