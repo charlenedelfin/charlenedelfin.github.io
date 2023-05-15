@@ -20,4 +20,4 @@ Thank you to freeCodeCamp, W3Schools, CS50, Programiz, #100DaysOfCode, the artic
 
 # License
 
-[MIT](https://github.com/charlenedelfin/charlenedelfin.github.io/
+[MIT](https://github.com/charlenedelfin/charlenedelfin.github.io/blob/main/LICENSE)
