@@ -1,6 +1,6 @@
 # My official website
 My official website is a GitHub Pages site that serves as a link list of all of my official links across the web. It is also a demo of my progress in learning programming.
-#Visuals
+# Visuals
 ![Image](https://github.com/charlenedelfin/charlenedelfin.github.io/blob/main/images/visuals.gif)
 # Usage
 Find my books, poems, programming projects, and gift shop. Also find my current work and social media pages.
