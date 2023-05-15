@@ -295,7 +295,7 @@ button {
 
 /* Makes welcome message white */
 
-#container > #home > p, footer > p > a {
+#container > #home > p, #home-body > footer > p > a {
   color: white;
 }
 
