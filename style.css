@@ -259,6 +259,12 @@ button {
   border-radius: 10px;
 }
 
+/* Creates space between social icons and privacy policy */
+
+#privacy {
+  margin-top: 20px;
+}
+
 /* Homepage only */
 /* Sets background image for homepage */
 
@@ -289,7 +295,7 @@ button {
 
 /* Makes welcome message white */
 
-#container > #home > p {
+#container > #home > p, footer > p > a {
   color: white;
 }
 
@@ -299,7 +305,7 @@ button {
   
   /* Makes all links except the ones in     footer black upon hover*/
   
-  :not(footer) > a:hover, #display-case > button > a:hover {
+  :not(footer) > a:hover, #display-case > button > a:hover, #privacy > a {
     color: black;
   }
   
